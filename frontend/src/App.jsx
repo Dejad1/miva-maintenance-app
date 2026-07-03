@@ -396,4 +396,22 @@ export default function App() {
                       <td style={{ padding: '16px 12px', color: '#64748B' }}>{req.location}</td>
                       <td style={{ padding: '16px 12px', fontWeight: '600', color: '#0F2C59' }}>{req.officer}</td>
                       <td style={{ padding: '16px 12px' }}>
-                        <span style={{ fontSize: '11px', fontWeight: '700', padding: '4px
+                        <span style={{ fontSize: '11px', fontWeight: '700', padding: '4px 8px', borderRadius: '4px', backgroundColor: req.status === 'Completed' ? '#DEF7EC' : '#FEF08A', color: req.status === 'Completed' ? '#03543F' : '#713F12' }}>{req.status}</span>
+                      </td>
+                    </tr>
+                  ))}
+                </tbody>
+              </table>
+            </div>
+          </div>
+        )}
+
+      </main>
+
+      <footer style={{ textAlign: 'center', padding: '24px', backgroundColor: '#FFF', color: '#64748B', fontSize: '11px', borderTop: '1px solid #E2E8F0', fontWeight: '500' }}>
+        MIVA Open University &bull; Postgraduate Course Assessment Artifact &bull; Student Reference Identifier Row [cite: 29]
+      </footer>
+
+    </div>
+  );
+}
